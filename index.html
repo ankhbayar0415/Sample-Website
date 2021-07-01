@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<title>Welcome to ABCDEFG</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+/*SLIDESHOW*/
+	/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: absolute;
+		  margin-top: 330px;
+		  margin-left: 500px;
+		  border: 3px;
+		  border-style: dashed;
+		}
+		
+	/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  padding: 16px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		}
+
+	/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+		
+	/* Caption text */
+		.text {
+		  color: #fff;
+		  font-size: 20px;
+		  position: absolute;
+		  bottom: 50px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+	/* Number text */
+		.numbertext {
+		  color: #000;
+		  font-size: 20px;
+		  padding: 8px 12px;
+		  position: absolute;
+		}
+
+	/* The dots */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+		
+	/* The dots hover effect*/
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+	/* Dots fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		
+	/* Dots fading animation */
+		@-webkit-keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+		
+	/* Dots fading animation */
+		@keyframes fade {
+		  from {opacity: .4}
+		  to {opacity: 1}
+		}
+		
+	/* Audio */
+		audio {
+		  display:none;
+		}
+		</style>
+	</head>
+	
+	<body>
+<!-- Background music(Autoplay) --> 
+		<audio controls autoplay>
+			<source src="audio/decoy.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		</audio>
+<!-- Navigation bar --> 
+	
+		<div id="ul">
+			<a href="index.html"><img src="homepage/logo1.png" alt="Logo" height="100" width="375"></a>
+			<a href="index.html"><img src="homepage/logo.jpg" alt="Logo" height="80" width="375"></a>
+			<br/><br/><br/><br/>
+				<div class="li"><a href="index.html">HOME</a></div>
+				<div class="li"><a href="hats.html">HATS</a></div>
+				<div class="li"><a href="access.html">ACCESSORIES</a></div>
+				<div class="li"><a href="sweat.html">SWEATSHIRT</a></div>
+				<div class="li"><a href="contact.html">CONTACT</a></div>
+			<br/><br/><br/><br/>
+			<a href="https://www.google.com/maps/dir//skaptopara+aubg/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14aaf5ffcfdc92f1:0x56e11ee6ecb544?sa=X&ved=2ahUKEwjK7uXky_rlAhWioVwKHS1kCfkQ9RcwC3oECA4QEA" target="_blank" style="margin-left: 170px;">
+				<img src="homepage/bg.jpg" alt="flag" height="30" width="30">
+			</a>
+			<br/><br/>
+			<a href="https://www.instagram.com/ankhbayar_e/" target="_blank" style="margin-left:100px; font-family: Impact;">By Ankhbayar Enkhlkhagva</a>
+		</div>
+<!-- Homepage content -->		
+		<div class="left-half">
+			<h1>"ABCDEFG" Resale Store </h1>
+			<p>"ABCDEFG" is a clothing store, based in Blagoevgrad, Bulgaria. 
+				All our products are expertly checked to ensure their quality and authenticity.
+				Our relsale store provides a variety of items that are upscale in quality and look, but not in price!
+				Because we receive so many one-of-a-kind, designer pieces, our inventory moves fast and
+				is constantly changing. Best of all, our customers can feel good about shopping with us.
+			</p>
+		</div>
+		
+		<div class="right-half">	
+		<h1>What brands we sell:</h1>
+			  <p>Off-White</p>
+			  <p>Supreme</p>
+			  <p>MXDVS</p>
+			  <p>and many more comming soon!</p>
+		</div>
+		
+<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="homepage/slide1.png" width="900" height="500" alt="a">
+				<div class="text">MXDVS "Lucky to be Alive" Hat</div>
+			</div>
+				
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="homepage/slide2.png" width="900" height="500" alt="a">
+				<div class="text">MXDVS "Pyromaniac" T-Shirt</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="homepage/slide3.png" width="900" height="500" alt="a">
+				<div class="text">MXDVS "Cobra" T-shirt</div>
+			</div>
+			  
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="homepage/slide4.png" width="900" height="500" alt="a">
+				<div class="text">Supreme®/OAMC Overdyed Vintage Military Liner</div>
+			</div>
+			  
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="homepage/slide5.png" width="900" height="500" alt="a">
+				<div class="text">Off-White™ off-court 3.0</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			<!-- The dots -->
+			<div style="margin-left: 400px;">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+		</div>
+		
+<!-- JScipt for the slideshow--> 
+		<script>
+			<!-- Default slide number -->
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			<!-- Next/previous controls -->
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				<!-- Goes to 1st slide if user clicks on next button while at the last slide -->
+				if (n > slides.length) {slideIndex = 1}
+				<!-- Goes to last slide if user clicks on previous button while at the 1st slide -->
+				if (n < 1) {slideIndex = slides.length}
+				<!-- Changing slides -->
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				<!-- Changing dots -->
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+<!-- Footer --> 
+		<div class="footer">
+			<h2>Copyright ©2019 All rights almost reserved</h2>
+		</div>
+	</body>
+</html>

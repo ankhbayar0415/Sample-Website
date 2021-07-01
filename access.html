@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<title>Accessories</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style>
+/* Zoom when the cursor is on the pictures */
+		/* Container for pictures */
+		.zoom {
+			background-color: #ffffff;
+			transition: transform .2s;
+			width: 300px;
+			border: 3px dashed #767676;
+		}
+		
+		/* Container hover effect */
+		.zoom:hover {
+			-ms-transform: scale(1.2); /* IE 9 */
+			-webkit-transform: scale(1.2); /* Safari 3-8 */
+			transform: scale(1.2); 
+			border: 1px dashed #777;
+		}
+		
+		/* Description of the picture(products) */
+		.desc {
+			padding: 15px;
+			text-align: center;
+		}
+/* Modal(pop up dialogue) */
+		/* The Modal/button (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; 
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; 
+			height: 100%; 
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black with opacity */
+		}
+		
+		/* Modal Content */
+		.modal-content {
+			background-color: #fefefe;
+			margin-top: 300px;
+			margin-left: 550px;
+			padding: 20px;
+			border: 2px dashed #888;
+			width: 30%;
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+	
+		/* The Close Button hover effect */
+		.close:hover, .close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		/* Button */
+		.fbutton {
+			font-size: 11px;
+			text-transform: uppercase;
+			padding: 15px;
+			margin-top:10px;
+			background-color: white;
+			color: black;
+			border: 2px solid #555555;
+			transition: all 0.4s ease 0s;
+		}
+		/* Button hover effect */
+		.fbutton:hover {
+			background-color: #555555;
+			color: white;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		</style>
+	</head>
+	
+	<body>
+<!-- Navigation bar --> 
+	
+		<div id="ul">
+			<a href="index.html"><img src="homepage/logo1.png" alt="Logo" height="100" width="375"></a>
+			<a href="index.html"><img src="homepage/logo.jpg" alt="Logo" height="80" width="375"></a>
+			<br/><br/><br/><br/>
+				<div class="li"><a href="index.html">HOME</a></div>
+				<div class="li"><a href="hats.html">HATS</a></div>
+				<div class="li"><a href="access.html">ACCESSORIES</a></div>
+				<div class="li"><a href="sweat.html">SWEATSHIRT</a></div>
+				<div class="li"><a href="contact.html">CONTACT</a></div>
+			<br/><br/><br/><br/>
+			<a href="https://www.google.com/maps/dir//skaptopara+aubg/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14aaf5ffcfdc92f1:0x56e11ee6ecb544?sa=X&ved=2ahUKEwjK7uXky_rlAhWioVwKHS1kCfkQ9RcwC3oECA4QEA" target="_blank" style="margin-left: 170px;">
+				<img src="homepage/bg.jpg" alt="flag" height="30" width="30">
+			</a>
+			<br/><br/>
+			<a href="https://www.instagram.com/ankhbayar_e/" target="_blank" style="margin-left:100px; font-family: Impact;">By Ankhbayar Enkhlkhagva</a>
+		</div>
+<!-- Table for Products -->		
+		<table style="margin-top:50px; margin-left:500px; position:absolute;">
+			<tr>
+				<th> 
+					<div class="zoom">
+						<a>
+							<img src="Products/access/a1.png" alt="Optic protector" width="300" height="200">
+						</a>
+						<div class="desc">MXDVS Optic protector <br/><br/> $115 </div>
+					</div>
+				  
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn1" class="fbutton">Add to Cart</button>
+
+					<!-- The Modal -->
+					<div id="myModal1" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<div class="h5">Successfully added to your cart</div>
+						</div>
+					</div>
+				</th>
+				
+				<th>  
+				<div class="zoom">
+				  <a>
+					<img src="Products/access/a2.png" alt="hood" width="300" height="200">
+				  </a>
+				  <div class="desc">MXDVS HOOD<br/> HOOD + MASK + NECKSCARF <br/> $60 </div>
+				</div>
+				  
+				  <!-- Trigger/Open The Modal -->
+				  <button id="myBtn2" class="fbutton">Add to Cart</button>
+
+				  <!-- The Modal -->
+				  <div id="myModal2" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="h5">Successfully added to your cart</div>
+					  </div>
+				  </div>
+				</th>
+				
+				<th> 
+				<div class="zoom">
+				  <a>
+					<img src="Products/access/a3.png" alt="scarf" width="300" height="200">
+				  </a>
+				  <div class="desc">MXDVS Satin scarf<br/><br/> 50$</div>
+				  </div>
+				  
+				  <!-- Trigger/Open The Modal -->
+				  <button id="myBtn3" class="fbutton">Add to Cart</button>
+
+				  <!-- The Modal -->
+				  <div id="myModal3" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<span class="close">&times;</span>
+						<div class="h5">Successfully added to your cart</div>
+					  </div>
+				  </div>
+				</th>
+			</tr>
+		</table>
+		
+		<table style="margin-top:450px; margin-left:500px; position:absolute;">
+		  <tr>
+			<th> <div class="zoom">
+			  <a>
+				<img src="Products/access/a4.jpg" alt="zippo" width="300" height="200">
+			  </a>
+			  <div class="desc">SUPREME Zippo<br/><br/>$25 </div>
+			  </div>
+			  
+			  <!-- Trigger/Open The Modal -->
+			  <button id="myBtn4" class="fbutton">Add to Cart</button>
+
+			  <!-- The Modal -->
+			  <div id="myModal4" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="h5">Successfully added to your cart</div>
+			  </div>
+              </div>
+			  
+			</th>
+			
+			<th> 
+			<div class="zoom">
+			  <a>
+				<img src="Products/access/a5.jpg" alt="speaker" width="300" height="200">
+			  </a>
+			  <div class="desc">SUPREME Speaker<br/><br/>150$ </div>
+			  </div>
+			  <!-- Trigger/Open The Modal -->
+			  <button id="myBtn5" class="fbutton">Add to Cart</button>
+
+			  <!-- The Modal -->
+			  <div id="myModal5" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="h5">Successfully added to your cart</div>
+			  </div>
+              </div>
+			  
+			</th>
+		   
+			<th> 
+			<div class="zoom">
+			  <a>
+				<img src="Products/access/a6.jpg" alt="belt" width="300" height="200">
+			  </a>
+			  <div class="desc">OFF-WHITE Belt<br/><br/>$100 </div>
+			  </div>
+			  
+			  <!-- Trigger/Open The Modal -->
+			  <button id="myBtn6" class="fbutton">Add to Cart</button>
+
+			  <!-- The Modal -->
+			  <div id="myModal6" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="h5">Successfully added to your cart</div>
+			  </div>
+              </div>
+			  
+			</th>
+		  </tr>
+		</table>  
+<!-- Script for modal(pop up box)-->		
+		<script>
+			<!-- Get the modal -->
+			var modal = document.getElementById("myModal1", "myModal2", "myModal3", "myModal4", "myModal5", "myModal6");
+				
+			<!-- Get the button that opens the modal -->
+			var btn1 = document.getElementById("myBtn1");
+			var btn2 = document.getElementById("myBtn2");
+			var btn3 = document.getElementById("myBtn3");
+			var btn4 = document.getElementById("myBtn4");
+			var btn5 = document.getElementById("myBtn5");
+			var btn6 = document.getElementById("myBtn6");
+
+				
+			<!-- Get the <span> element that closes the modal-->
+			var span = document.getElementsByClassName("close")[0];
+
+			<!-- When the user clicks the button, open the modal -->
+			btn1.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn2.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn3.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn4.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn5.onclick = function() {
+				modal.style.display = "block";
+			}
+			btn6.onclick = function() {
+				modal.style.display = "block";
+			}
+				
+			<!-- When the user clicks on <span> (x), close the modal-->
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			<!-- When the user clicks anywhere outside of the modal, close it-->
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		
+		<div class="footer">
+			<h2>Copyright ©2019 All rights almost reserved</h2>
+		</div>
+	</body>
+</html>
